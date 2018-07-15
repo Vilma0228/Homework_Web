@@ -1,0 +1,106 @@
+body {
+  background: lightgray;
+}
+/* every box is this size */
+
+.skyblue {
+  background: skyblue;
+}
+
+.box {
+  padding: 10px;
+  background: white;
+  margin-top:10px;
+  margin-left:10px;
+  margin-right:5px;
+  margin-bottom:20px;
+  content: center;
+}
+
+
+/* navbar padding and background color */
+.navbar {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 25px;
+  background: white;
+}
+
+/* navbar li's inline-block elements - multiple on the same line. */
+.navbar li {
+  display: d-block;
+  padding: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+
+h1 {
+  font-size: 35px;
+  color: #008075;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2 {
+  font-size: 20px;
+  color: #008075;
+}
+
+
+p {
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+.c-d{color:#6c7183;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.latitude {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  background-color: rgb(40, 166, 118);
+  border: 1px solid rgb(40, 166, 156);
+  padding: 15px;
+}
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+  .navbar li {
+    padding: 10px;
+  }
+  .box {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .navbar ul {
+    visibility: hidden;
+  }
+  nav-select {
+    visibility: visible;
+  }
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+  }
